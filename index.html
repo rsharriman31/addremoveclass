@@ -1,164 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Code Activity</title>
+  <title>FAQ | Studio 54x</title>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" type="text/css" href="styles/site.css"/>
-  <script src="scripts/jquery-3.2.1.min.js"></script>
-  <script src="scripts/activity.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="index.html"><img alt="Studio 54x Logo" src="images/logo.png"/></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="featured.html">Featured</a></li>
+      <li class="current_page"><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <div>
-      <h1>Sort by Breed:</h1>
-      <button id="beagle">Beagle</button>
-      <button id="border_collie">Border Collie</button>
-      <button id="cocker_spaniel">Cocker Spaniel</button>
-      <button id="corgi">Corgi</button>
-      <button id="german_shepherd">German Shepherd</button>
-      <button id="golden_retriever">Golden Retriever</button>
-      <button id="maltese">Maltese</button>
-      <button id="pit_bull">Pit Bull</button>
-      <button id="reset">Reset</button>
-    </div>
-    
-    <div>
-      <h1>The Go Fetch Dog Club Roster</h1>
-      <table>
-        <tr>
-          <th>Pet Name</th>
-          <th>Owner Name</th>
-          <th>Breed</th>
-          <th>Age</th>
-        </tr>
-        <tr class="dog border_collie">
-          <td>Bella</td>
-          <td>Janet Parker</td>
-          <td>Border Collie</td>
-          <td>3</td>
-        </tr>
-        <tr class="dog pit_bull">
-          <td>Max</td>
-          <td>John Smith</td>
-          <td>Pit Bull</td>
-          <td>2</td>
-        </tr>
-        <tr class="dog corgi">
-          <td>Toast</td>
-          <td>Edward Lin</td>
-          <td>Corgi</td>
-          <td>2</td>
-        </tr>
-        <tr class="dog golden_retriever">
-          <td>Buddy</td>
-          <td>Jethro David</td>
-          <td>Golden Retriever</td>
-          <td>5</td>
-        </tr>
-        <tr class="dog corgi">
-          <td>Olive</td>
-          <td>Darlene Mallard</td>
-          <td>Corgi</td>
-          <td>1</td>
-        </tr>
-        <tr class="dog maltese">
-          <td>Snowflake</td>
-          <td>Sarah Park</td>
-          <td>Maltese</td>
-          <td>9</td>
-        </tr>
-        <tr class="dog beagle">
-          <td>Taco</td>
-          <td>Hadiyah Williams</td>
-          <td>Beagle</td>
-          <td>3</td>
-        </tr>
-        <tr class="dog cocker_spaniel">
-          <td>Petey</td>
-          <td>Dhruv Patel</td>
-          <td>Cocker Spaniel</td>
-          <td>1</td>
-        </tr>
-        <tr class="dog cocker_spaniel">
-          <td>Lily</td>
-          <td>Diana Ali</td>
-          <td>Cocker Spaniel</td>
-          <td>6</td>
-        </tr>
-        <tr class="dog pit_bull">
-          <td>Rocky</td>
-          <td>Sam Omar</td>
-          <td>Pit Bull</td>
-          <td>2</td>
-        </tr>
-        <tr class="dog german_shepherd">
-          <td>Duke</td>
-          <td>Diana Cane</td>
-          <td>German Shepherd</td>
-          <td>1</td>
-        </tr>
-        <tr class="dog golden_retriever">
-          <td>Jack</td>
-          <td>Michael Freeman</td>
-          <td>Golden Retriever</td>
-          <td>7</td>
-        </tr>
-        <tr class="dog corgi">
-          <td>Arthur</td>
-          <td>Anthony Haskell</td>
-          <td>Corgi</td>
-          <td>11</td>
-        </tr>
-        <tr class="dog border_collie">
-          <td>Zach</td>
-          <td>Catherine White</td>
-          <td>Border Collie</td>
-          <td>4</td>
-        </tr>
-        <tr class="dog beagle">
-          <td>Tina</td>
-          <td>Timothy Palmer</td>
-          <td>Beagle</td>
-          <td>10</td>
-        </tr>
-        <tr class="dog golden_retriever">
-          <td>Lisa</td>
-          <td>Jane Cash</td>
-          <td>Golden Retriever</td>
-          <td>5</td>
-        </tr>
-        <tr class="dog maltese">
-          <td>Tommy</td>
-          <td>Lara Condor</td>
-          <td>Maltese</td>
-          <td>1</td>
-        </tr>
-        <tr class="dog beagle">
-          <td>Lisa</td>
-          <td>Joshua Kavinsky</td>
-          <td>Beagle</td>
-          <td>8</td>
-        </tr>
-        <tr class="dog golden_retriever">
-          <td>Sarah</td>
-          <td>Brad Jones</td>
-          <td>Golden Retriever</td>
-          <td>5</td>
-        </tr>
-        <tr class="dog golden_retriever">
-          <td>Jackie</td>
-          <td>Donald Johnson</td>
-          <td>Golden Retriever</td>
-          <td>9</td>
-        </tr>
-        <tr class="dog corgi">
-          <td>Laura</td>
-          <td>Ella Harmon</td>
-          <td>Corgi</td>
-          <td>3</td>
-        </tr>
-      </table>
-    </div>
+    <article class="content">
+      <h1>Frequently Asked Questions</h1>
+      <section class="faq" id="q1">
+        <h2>How can I get accurate pricing for my session?</h2>
+        <p class="more">Book a consultation.<span class="expand"> ➕ More…</span></p>
+        <p class="less">Because almost all sessions are unique and pricing is based on a case-by-case basis, we cannot give you an accurate estimate unless we've met you for a consultation. Consultations are complimentary and commitment-free.</p>
+      </section>
+      <section class="faq" id="q2">
+        <h2>What is a "shot list"?</h2>
+        <p class="more">A "shot list" is a list of key people, locations, or situations that should be captured.<span class="expand"> ➕ More…</span></p>
+        <p class="less">Although our photographers have extensive experience in how to make the bride and groom shine, we understand that there are specific shots you may want us to take. But this is not restricted to weddings! Often, event planners need specific shots to show their sponsors or to advertise for future events. A "shot list" is a list of key people, locations, or situations that the client wishes to be captured. With the "shot list," we can ensure our clients get the shots they want without fear of running out of time or forgetting in the excitement of the day.</p>
+      </section>
+      <section class="faq" id="q3">
+        <h2>What do you mean by "key guests"?</h2>
+        <p class="more">We like to provide our clients the opportunity to identify important guests to ensure their inclusion in the photos.<span class="expand"> ➕ More…</span></p>
+        <p class="less">We know it takes more than one person to plan and produce an event. We have found that many of our clients often use our photos on their websites to advertise or show to their clients and sponsors. To ensure that these key people are included and our clients are satisfied, we like to provide our clients the opportunity to identify important guests to ensure their inclusion in the photos.</p>
+      </section>
+      <section class="faq" id="q4">
+        <h2>How does a consultation work?</h2>
+        <p class="more">We will have a consultant call to schedule a 30-minute appointment to help plan your event.<span class="expand"> ➕ More…</span></p>
+        <p class="less">We want to meet the needs of our clients without breaking the bank, and the consultation enables us to provide a personalized experience for each photo session where you get what you want at a price you can afford. Once you send a request for a consultation using our <a href="contact.html">contact form</a>, we will have a consultant call to schedule a 30-minute appointment to discuss your event. During the consultation, you and the consultant will address your requirements and build a custom package—or choose from our set packages—to get everything you want within your budget. The consultant will then pair you with the photographer best fit for your style and availability.</p>
+      </section>
+      <section class="faq" id="q5">
+        <h2>What is the benefit of an in-studio versus an on-location family portrait session?</h2>
+        <p class="more">There are pros and cons for both. The better fit depends on what you're looking for.<span class="expand"> ➕ More…</span></p>
+        <p class='less'>The in-studio session allows for a private session with no distractions. We have all of our professional equipment and you have full access to our backgrounds and props. On location, you have the ability to capture nature and create beautiful settings a studio cannot artificially replicate. The better fit depends on what you prefer.</p>
+      </section>
+      <section class="faq" id="q6">
+        <h2>Do you allow walk-ins?</h2>
+        <p class="more">We do not accept walk-ins for sessions.<span class="expand"> ➕ More…</span></p>
+        <p class="less">If you are looking for a single portrait photo rather than a full photo session, such as for identification on official documents, we accept walk-ins. To ensure high-quality work, we do not accept walk-ins for sessions, as we require a short consultation to go over theme and cost.</p>
+      </section>
+    </article>
   </main>
+
+  <footer>
+    <p>
+      All images on this site are solely the property of Studio 54x. These photographs are protected by copyright laws and are not to be downloaded, printed, or reproduced without express written permission.
+    </p>
+    <p>© 2018 Studio 54x</p>
+  </footer>
 </body>
 </html>
